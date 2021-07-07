@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>MUFO</title>
+</head>
+<body>
+
+    <div class="music-container">
+        
+        <div class="music-content">
+            
+            <div id="bg-image">
+                <div class="blacklayer"></div>
+                <img src="img/cover/beamerboy.jpg" alt="beamerboy" id="bgImage">
+            </div>
+            
+            <div id="menu">
+                <img src="img/button/menu.png" alt="menu">
+                <img src="img/button/search.png" alt="search">
+            </div>
+            
+            <div id="volume-container">
+                <img src="img/button/low-volume.png" width="20px" height="20px" alt="low-volume">
+                <input type="range" class="slider" id="volumeslider" min="0" max="100" value="100" step="1">
+                <img src="img/button/up-volume.png" width="20px" height="20px" alt="up-volume">
+            </div>
+            
+            <div id="music-image">
+                <div id="square-image">
+                    <img src="img/cover/beamerboy.jpg" alt="beamerboy" id="image">
+                </div>   
+            </div>
+            
+            <div id="music-title">
+                <h5 id="playlist-stats"></h5>
+                <h6 id="aboutsinger"></h6>
+            </div>
+            
+            <div id="music-menu">
+                <button id="random"><img src="img/button/random.png" alt="random"></button>
+                <button id="mute"><img src="img/button/mute.png" alt="mute"></button>
+            </div>
+            
+            <div id="currentTime">
+                <span id="start">00:00</span>
+                <span id="end">00:00</span>
+            </div>
+
+            <input type="range" class="seekslider" id="seekslider" min="0" max="100" value="0" step="1">
+            
+            <div id="buttons">
+                <button class="repeat" id="repeat"><img src="img/button/repeat.png" alt="repeat"></button>               
+                <div>
+                    <button class="back" id="back"><img src="img/button/backward.png" alt="backward"></button>
+                    <button class="play" id="play"><img src="img/button/play.png" alt="backward"></button>
+                    <button class="next" id="next"><img src="img/button/forward.png" alt="next"></button>
+
+                </div>
+                <span class="like">
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
